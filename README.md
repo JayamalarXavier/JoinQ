@@ -1,16 +1,86 @@
-# React + Vite
+# JoinQ – Digital Queue Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based digital queue management system designed to reduce physical waiting time and improve service efficiency through online queue access and token tracking.
 
-Currently, two official plugins are available:
+## Project Recognition
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+JoinQ has received recognition at two national-level symposium events:
 
-## React Compiler
+- **WARTECH'26** – 3rd Prize
+- **CITA2K26** – Winner, Idea Presentation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+Traditional queue systems often involve long waiting times, overcrowding, and inefficient queue management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+JoinQ provides a digital solution that enables organizations to create and manage queues while allowing users to join queues remotely and monitor queue progress.
+
+## Key Features
+
+- Create and manage digital queues
+- Join queues through an online interface
+- QR-code-based queue access
+- Token tracking and waiting-count updates
+- Queue status management: Open, Paused, and Closed
+- Support for multiple organization categories
+- REST API integration between frontend and backend
+
+## Technology Stack
+
+### Frontend
+
+- React.js
+- Vite
+- Axios
+- React Router
+- QRCode React
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+### Deployment
+
+- Render
+
+## System Architecture
+
+React.js Frontend
+       |
+       v
+Express.js REST API
+       |
+       v
+MongoDB Database
+
+## Application Workflow
+
+1. Organizations create and configure queues.
+2. Users select an available queue.
+3. Users join the queue through the web interface or QR code.
+4. The system generates a token and updates the waiting count.
+5. Organizations manage and serve customers through the queue dashboard.
+
+## Project Objectives
+
+- Reduce physical waiting time.
+- Improve queue organization and service efficiency.
+- Provide accessible digital queue management.
+- Enable organizations to monitor queue progress.
+
+## Future Enhancements
+
+- User notifications
+- Appointment scheduling
+- Queue history and analytics
+- Automated waiting-time estimation
+- Multi-organization management
+
+## Developer
+
+**Jayamalar J**
+
+B.E. Computer Science and Engineering
